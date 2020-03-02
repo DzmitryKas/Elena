@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 25px 0;
+    background-color: transparent;
+
+    &__inner {        
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;       
+    }
+
+    &__img {
+        width: 120px;
+        color: $primary-color;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-left: 60px;
+        }
+    }
+
+    &__link {
+        color: $primary-color;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
