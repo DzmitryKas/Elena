@@ -2,9 +2,8 @@
   width: device-width;
 }
 
-html {
+*, :after, :before, html, legend {
   box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
 }
 
 .container {

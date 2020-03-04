@@ -4,6 +4,17 @@
     left: 0;
     padding: 25px 0;
     background-color: transparent;
+    transition: all .4s ease; 
+
+    &.active {
+        background-color: $primary-color;
+        
+        .header {
+            &__link {
+                color: $btn-color;
+            }
+        }
+    }
 
     &__inner {        
         display: flex;
