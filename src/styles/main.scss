@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "~reset-css";
+@import "~swiper/css/swiper.min.css";
 
 @import './helpers/variables';
 @import './helpers/mixins';
@@ -10,4 +11,5 @@
 
 @import './blocks/header';
 @import './blocks/main';
-@import './blocks/contacts'
+@import './blocks/contacts';
+@import './blocks/gallery';
