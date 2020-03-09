@@ -1,123 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Enriqueta:400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="./assets/img/icon/3.svg" alt="" class="header__img" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__link">Главная</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Актуальные предложения</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="main">
       <div class="container">
-        <div class="header__inner">
-          <div class="header__logo">
-            <img
-              src="./assets/img/header-logo.svg"
-              alt=""
-              class="header__img"
-            />
-          </div>
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="" class="header__link">Home</a>
-              </li>
-              <li class="header__item">
-                <a href="" class="header__link">Services</a>
-              </li>
-              <li class="header__item">
-                <a href="" class="header__link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="main__inner">
+          <h1 class="main__title">Посмотри на мир своими глазами</h1>
+          <span class="main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt</span>
+          <button class="btn main__btn">Сделать заказ</button>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="main">
-        <div class="container">
-          <div class="main__inner">
-            <h1 class="main__title">Enjoy Your Summer Vacation</h1>
-            <span class="main__subtitle"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt</span
-            >
-            <button class="btn main__btn">Explore</button>
+    </section>
+    <section class="gallery">
+      <p class="gallery__title">Gallery</p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/img/slider/1.jpg" alt="" class="slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slider/2.jpg" alt="" class="slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slider/3.jpg" alt="" class="slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slider/4.jpg" alt="" class="slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slider/5.jpg" alt="" class="slide__img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slider/6.jpg" alt="" class="slide__img">
           </div>
         </div>
-      </section>
-      <section class="gallery">
-        <p class="gallery__title">Gallery</p>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/img/slider/1.jpg" alt="" class="slide__img">  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <h2 class="contacts__title">Let's Talk</h2>
+          <p class="contacts__subtitle">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam
+          </p>
+          <form action="" class="form">
+            <div class="form__row">
+              <div class="form__field">
+                <input type="text" class="form__input " placeholder="Email" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/slider/2.jpg" alt="" class="slide__img">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/slider/3.jpg" alt="" class="slide__img">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/slider/4.jpg" alt="" class="slide__img">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/slider/5.jpg" alt="" class="slide__img">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/slider/6.jpg" alt="" class="slide__img">
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="container">
-          <div class="contacts__inner">
-            <h2 class="contacts__title">Let's Talk</h2>
-            <p class="contacts__subtitle">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam
-            </p>
-            <form action="" class="form">
-              <div class="form__row">
+            <div class="form__row">
+              <div class="form__cell">
                 <div class="form__field">
                   <input type="text" class="form__input " placeholder="Email" />
                 </div>
               </div>
-              <div class="form__row">
-                <div class="form__cell">
-                  <div class="form__field">
-                    <input type="text" class="form__input " placeholder="Email" />
-                  </div>
-                </div>
-                <div class="form__cell">
-                  <div class="form__field">
-                    <input type="text" class="form__input " placeholder="Email" />
-                  </div>
+              <div class="form__cell">
+                <div class="form__field">
+                  <input type="text" class="form__input " placeholder="Email" />
                 </div>
               </div>
-              <div class="form__row">
-                <div class="form__field ">
-                  <textarea
-                    class="form__area "
-                    placeholder="Tell us more about your team and the project"
-                  ></textarea>
-                </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field ">
+                <textarea class="form__area " placeholder="Tell us more about your team and the project"></textarea>
               </div>
-              <button class="btn form__btn">Send</button>
-            </form>
-          </div>
+            </div>
+            <button class="btn form__btn">Send</button>
+          </form>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us__inner">
+          <p class="about-us__title">О нас</p>
+          <div class="about-us__top">
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <img src="./assets/img/svg/phone.svg" alt="" class="about-us__icon">
+                <span class="about-us__phone">+375 163 66-37-13</span>
+                <span class="about-us__phone">+375 29 79-79-003</span>
+                <span class="about-us__phone">+375 29 645-47-43</span>
+              </li>
+              <li class="about-us__item">
+                <img src="./assets/img/svg/mail.svg" alt="" class="about-us__icon">
+                <span class="about-us__mail">turelena@mail.ru</span>
+              </li>
+              <li class="about-us__item">
+                <img src="./assets/img/svg/geo.svg" alt="" class="about-us__icon">
+                <span class="about-us__place">Беларусь, г.Барановичи, ул.&nbsp;Комсомольская 15</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-us__bottom">
+            <div class="about-us__desc">
+              <ul class="about-us__items">
+                <li class="about-us__cell">
+                  <a href="" class="about-us__link">
+                    <img src="./assets/img/svg/Odnoklassniki_icon-icons.com_55854.svg" alt="" class="about-us__icon">
+                  </a>
+                </li>
+                <li class="about-us__cell">
+                  <a href="" class="about-us__link">
+                    <img src="./assets/img/svg/instagram_f_icon-icons.com_65485.svg" alt="" class="about-us__icon">
+                  </a>
+                </li>
+              </ul>
+              <div class="about-us__wrapper-time">
+                <span class="about-us__time">Режим работы:</span>
+                <span class="about-us__time">пн. - пт. с 10:00 до 18:00,</span>
+                <span class="about-us__time">сб: 10:00-14:00,</span>
+                <span class="about-us__time">выходной - воскресенье.</span>
+              </div>
+            </div>
+            <div class="about-us__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9006439800287!2d26.00819991549196!3d53.12992909860094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d8cfdbc4673b95%3A0x7995cb4dc1bf24f6!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8g0YPQuy4gMTUsINCR0LDRgNCw0L3QvtCy0LjRh9C4!5e0!3m2!1sru!2sby!4v1583693120897!5m2!1sru!2sby"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

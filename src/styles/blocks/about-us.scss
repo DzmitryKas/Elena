@@ -1,0 +1,98 @@
+.about-us {
+    &__inner {        
+        padding: 100px 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 30px;
+        line-height: 36px;
+        color: $secondary-color; 
+    }
+
+    &__list {
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__item {
+        padding: 20px;
+        width: 33.333%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-left: 1px solid $secondary-color;
+
+        &:last-child {
+            border-right: 1px solid $secondary-color;
+        }
+    }
+
+    &__icon {
+        stroke: $secondary-color;
+        width: 30px;
+        height: 30px;
+    }
+
+    &__phone {
+        margin-top: 10px;
+    }
+
+    &__place {
+        width: 70%;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    &__bottom {
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__desc {
+        padding: 30px;
+        flex-basis: 50%;
+    }
+
+    &__map {
+        flex-basis: 50%;
+    }
+
+    &__cell {
+        width: 50px;
+        height: 50px;
+        border: 2px solid $secondary-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__items {
+        display: flex;        
+    }
+
+    &__wrapper-time {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__time {
+        margin-top: 10px;
+        line-height: 20px;
+    }
+
+
+}
