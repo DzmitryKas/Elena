@@ -1,6 +1,7 @@
-import * as $ from 'jquery'
-import './styles/main.scss'
+import * as $ from 'jquery';
+import './styles/main.scss';
 import Swiper from 'swiper';
+// import AOS from 'aos';
 
 import './js/header.js';
 
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
           prevEl: '.swiper-button-prev',
         },
     });
-    console.log(mySwiper)
+    // AOS.init();
  }, false);
 
 

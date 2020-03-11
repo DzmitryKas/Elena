@@ -49,10 +49,9 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "imagemin-pngquant": "^5.0.1",
+    "aos": "^2.3.4",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
-    "pngquant-bin": "^3.1.1",
     "reset-css": "^5.0.1",
     "swiper": "^5.3.6"
   }
