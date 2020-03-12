@@ -11,9 +11,14 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__inner">
+      <div class="header__inner" data-aos="fade-dowm">
         <div class="header__logo">
           <img src="./assets/img/icon/3.svg" alt="" class="header__img" />
+        </div>
+        <input type="text" class="header__input" id="header-checkbox">
+        <label for="header-checkbox" class="header__label">MENU</label>
+        <div class="header__wrapper-burger">
+          <div class="header__burger"></div>
         </div>
         <nav class="header__nav">
           <ul class="header__list">
@@ -34,28 +39,49 @@
   <main>
     <section class="main">
       <div class="container">
-        <div class="main__inner" data-aos="fade-up">
+        <div class="main__inner" data-aos="fade-down">
           <h1 class="main__title">Посмотри на мир своими глазами</h1>
           <span class="main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt</span>
           <button class="btn main__btn">Сделать заказ</button>
+          <img src="./assets/img/gif/earth-spinning-rotating-animation-14.gif" alt="" class="main__img">
+        </div>
+      </div>
+    </section>
+    <section class="experience">
+      <div class="container">
+        <div class="experience__inner">
+          <ul class="experience__list">
+            <li class="experience__item">
+              <span class="experience__number">10</span>
+              <span class="experience__text">Опыт</span>
+            </li>
+            <li class="experience__item">
+              <span class="experience__number">23</span>
+              <span class="experience__text">Опыт</span>
+            </li>
+            <li class="experience__item">
+              <span class="experience__number">34</span>
+              <span class="experience__text">Опыт</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="services">
       <div class="services__inner">
         <div class="services__row">
-          <div class="services__left">
-            <figure class="services__fig">
+          <div class="services__left" data-aos="zoom-out-up">
+            <figure class="services__fig" >
               <img src="./assets/img/services/f37869d80a2e4a4445002058241d7d63.jpg" alt="" class="services__img">
               <figcaption class="services__desc">
                 <p class="services__text">Авиатуры <br> <span>Турция, Египет, Болгария, Тунис, Греция, ОАЭ, Испания, Италия, Кипр, Португалия, Куба, Вьетнам, Таиланд, Мексика <span></span>
               </figcaption>
             </figure>
           </div>
-          <div class="services__right">
+          <div class="services__right" data-aos="zoom-out-down">
             <div class="services__top">
-              <figure class="services__fig-top">
+              <figure class="services__fig-top" >
                 <img src="./assets/img/services/aviatours.jpg" alt="" class="services__img">
                 <figcaption class="services__desc">
                   <p class="services__text"><span>
@@ -69,7 +95,7 @@
             </div>
             <div class="services__bottom">
               <div class="services__item">
-                <figure class="services__fig">
+                <figure class="services__fig" >
                   <img src="./assets/img/services/unnamed.jpg" alt="" class="services__img">
                   <figcaption class="services__desc">
                     <p class="services__text">Туры</p>
@@ -121,7 +147,7 @@
     </section>
     <section class="contacts">
       <div class="container">
-        <div class="contacts__inner">
+        <div class="contacts__inner" data-aos="fade-up">
           <h2 class="contacts__title">Let's Talk</h2>
           <p class="contacts__subtitle">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -161,24 +187,24 @@
           <p class="about-us__title">О нас</p>
           <div class="about-us__top">
             <ul class="about-us__list">
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="flip-left">
                 <img src="./assets/img/svg/phone.svg" alt="" class="about-us__icon">
                 <span class="about-us__phone">+375 163 66-37-13</span>
                 <span class="about-us__phone">+375 29 79-79-003</span>
                 <span class="about-us__phone">+375 29 645-47-43</span>
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="flip-left" data-aos-delay="300">
                 <img src="./assets/img/svg/mail.svg" alt="" class="about-us__icon">
                 <span class="about-us__mail">turelena@mail.ru</span>
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="flip-left" data-aos-delay="600">
                 <img src="./assets/img/svg/geo.svg" alt="" class="about-us__icon">
                 <span class="about-us__place">Беларусь, г.Барановичи, ул.&nbsp;Комсомольская 15</span>
               </li>
             </ul>
           </div>
           <div class="about-us__bottom">
-            <div class="about-us__desc">
+            <div class="about-us__desc" data-aos="zoom-in">
               <ul class="about-us__items">
                 <li class="about-us__cell">
                   <a href="" class="about-us__link">
@@ -191,14 +217,14 @@
                   </a>
                 </li>
               </ul>
-              <div class="about-us__wrapper-time">
+              <div class="about-us__wrapper-time" >
                 <span class="about-us__time">Режим работы:</span>
                 <span class="about-us__time">пн. - пт. с 10:00 до 18:00,</span>
                 <span class="about-us__time">сб: 10:00-14:00,</span>
                 <span class="about-us__time">выходной - воскресенье.</span>
               </div>
             </div>
-            <div class="about-us__map">
+            <div class="about-us__map" data-aos="zoom-in">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9006439800287!2d26.00819991549196!3d53.12992909860094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d8cfdbc4673b95%3A0x7995cb4dc1bf24f6!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8g0YPQuy4gMTUsINCR0LDRgNCw0L3QvtCy0LjRh9C4!5e0!3m2!1sru!2sby!4v1583693120897!5m2!1sru!2sby"
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>

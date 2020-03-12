@@ -20,9 +20,7 @@ function addActive(header) {
 function removeActive(header) {
     if(header.classList.contains('active')) {
         header.classList.remove('active') 
-    }
-    
-    
+    }    
 }
 
 headerStyle();

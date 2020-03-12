@@ -15,6 +15,10 @@
     &__list {
         margin-top: 50px;
         display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -29,6 +33,12 @@
         &:last-child {
             border-right: 1px solid $secondary-color;
         }
+
+        @include mobile {
+            width: 100%;
+            border-right: 1px solid $secondary-color;
+        }
+
     }
 
     &__icon {
@@ -50,6 +60,12 @@
     &__bottom {
         margin-top: 50px;
         display: flex;
+
+        @include tablet-and-mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
     &__desc {
@@ -58,7 +74,22 @@
     }
 
     &__map {
-        flex-basis: 50%;
+        width: 50%;
+
+
+        @include tablet-and-mobile {
+            width: 100%;
+            padding-bottom: 60%;
+            position: relative;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     &__cell {
