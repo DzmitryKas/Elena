@@ -5,6 +5,7 @@ import AOS from 'aos';
 
 import './js/header.js';
 import './js/mobile-menu.js'
+import './js/scroll.js'
 
 document.addEventListener('DOMContentLoaded', function() {
     var mySwiper = new Swiper('.swiper-container', { 
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true,
         slidesPerView: 1,
         breakpoints: {
-            1600: {
+            1300: {
               slidesPerView: 2,
             }
           },
@@ -53,5 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     });
  }, false);
+
 
 

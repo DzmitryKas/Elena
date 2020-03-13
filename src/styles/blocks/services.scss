@@ -1,9 +1,5 @@
 .services {
     overflow: hidden;
-    &__inner {
-        padding: 100px 0;
-    }
-
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -20,8 +16,12 @@
 
     &__fig {
         position:relative;
-        padding-bottom:54%; 
-        overflow: hidden;     
+        padding-bottom:90%; 
+        overflow: hidden;  
+        
+        @include mobile {
+            padding-bottom: 45%;
+        }
         
         
         &:hover {
@@ -54,7 +54,7 @@
         bottom: 100%;
         right: 0;
         left: 0;
-        @include transition;
+        transition: all .6s ease;
 
         &:after {
             content: '';
@@ -79,7 +79,7 @@
 
     &__fig-top {
         position:relative;
-        padding-bottom:27%; 
+        padding-bottom:45%; 
         overflow: hidden;
 
         &:hover {
