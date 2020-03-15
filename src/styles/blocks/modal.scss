@@ -28,13 +28,17 @@
             width: 100%;
             margin: 200px auto 0;
             z-index: 1;
+
+            @include mobile {
+              margin: 60px auto 0;
+            }
           }
       }     
 
       .btn {
         &__close {
           position: absolute;
-          right: -40px;
+          right: -20px;
           top: -40px;
           font-size: 60px;
           cursor: pointer;
