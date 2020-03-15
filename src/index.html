@@ -23,13 +23,13 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="" class="header__link">Главная</a>
+              <a href="" class="header__link" id="main-link">Главная</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Актуальные предложения</a>
+              <a href="https://www.instagram.com/?hl=ru" class="header__link">Актуальные предложения</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Контакты</a>
+              <a href="" class="header__link" id="contacts-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -37,7 +37,7 @@
     </div>
   </header>
   <main>
-    <section class="main">
+    <section class="main" id="js-main">
       <div class="container">
         <div class="main__inner" data-aos="fade-down">
           <h1 class="main__title">Посмотри на мир своими глазами</h1>
@@ -211,7 +211,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="js-contacts">
       <div class="container">
         <div class="about-us__inner">
           <p class="about-us__title">О нас</p>
@@ -237,12 +237,12 @@
             <div class="about-us__desc" data-aos="zoom-in">
               <ul class="about-us__items">
                 <li class="about-us__cell">
-                  <a href="" class="about-us__link">
+                  <a href="https://ok.ru/" class="about-us__link">
                     <img src="./assets/img/svg/Odnoklassniki_icon-icons.com_55854.svg" alt="" class="about-us__icon">
                   </a>
                 </li>
                 <li class="about-us__cell">
-                  <a href="" class="about-us__link">
+                  <a href="https://www.instagram.com/?hl=ru" class="about-us__link">
                     <img src="./assets/img/svg/instagram_f_icon-icons.com_65485.svg" alt="" class="about-us__icon">
                   </a>
                 </li>
@@ -265,6 +265,38 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">2020 &copy; All rights reserved</div>
+      </div>
+    </div>
+  </footer>
+  <section class="modal">
+    <div class="container">
+      <div class="modal__inner">
+        <form action="" class="modal__form">
+          <div class="form__row">
+            <div class="form__field">
+              <input type="text" class="form__input " placeholder="Email" />
+            </div>
+          </div>
+            <div class="form__row">
+              <div class="form__field">
+                <input type="text" class="form__input " placeholder="Email" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field ">
+                <textarea class="form__area " placeholder="Tell us more about your team and the project"></textarea>
+              </div>
+            </div>
+            <button class="btn form__btn">Подобрать тур</button>
+            <div class="btn__close">&times;</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

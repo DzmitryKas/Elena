@@ -1,0 +1,49 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+      overflow: hidden;
+
+      &:after {
+        content: "";
+        @include fill;
+        background-color: black;
+        opacity: 0.4;
+        z-index: -1;
+      }
+
+      .modal {
+        &__inner {
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+            margin: 200px auto 0;
+            z-index: 1;
+          }
+      }     
+
+      .btn {
+        &__close {
+          position: absolute;
+          right: -40px;
+          top: -40px;
+          font-size: 60px;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+

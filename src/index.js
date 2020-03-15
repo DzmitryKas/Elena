@@ -4,8 +4,10 @@ import Swiper from 'swiper';
 import AOS from 'aos';
 
 import './js/header.js';
-import './js/mobile-menu.js'
-import './js/scroll.js'
+import './js/mobile-menu.js';
+import './js/scroll.js';
+import './js/modal.js';
+import './js/scrollBlock';
 
 document.addEventListener('DOMContentLoaded', function() {
     var mySwiper = new Swiper('.swiper-container', { 

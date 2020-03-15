@@ -1,7 +1,7 @@
 .main {
   position: relative;
   background: url("../assets/img/main-bg.jpg") bottom center / cover no-repeat;
-  z-index: -1;
+  z-index: 1;
 
   &__inner {
     position: relative;
